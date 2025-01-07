@@ -14,68 +14,68 @@
 
 # feat|fix|test|refactor|chore|style|docs|perf|build|ci|revert
 filters:
-  - label: feat
+  - label: kind:feat
     regexs:
       - /^feat(\(.*\))?:/i
     events: [issues, pull_request]
     targets: [title]
 
-  - label: fix
+  - label: kind:bug
     regexs:
       - /^fix(\(.*\))?:/i
     events: [issues, pull_request]
     targets: [title]
 
-  - label: test
+  - label: kind:test
     regexs:
       - /^test(\(.*\))?:/i
     events: [issues, pull_request]
     targets: [title]
 
-  - label: refactor
+  - label: kind:refactor
     regexs:
       - /^refactor(\(.*\))?:/i
     events: [issues, pull_request]
     targets: [title]
 
-  - label: chore
+  - label: kind:chore
     regexs:
       - /^chore(\(.*\))?:/i
     events: [issues, pull_request]
     targets: [title]
 
-  - label: style
+  - label: kind:style
     regexs:
       - /^style(\(.*\))?:/i
     events: [issues, pull_request]
     targets: [title]
 
-  - label: docs
+  - label: kind:docs
     regexs:
       - /^docs(\(.*\))?:/i
     events: [issues, pull_request]
     targets: [title]
 
-  - label: perf
+  - label: kind:perf
     regexs:
       - /^perf(\(.*\))?:/i
     events: [issues, pull_request]
     targets: [title]
 
-  - label: build
+  - label: kind:build
     regexs:
       - /^build(\(.*\))?:/i
     events: [issues, pull_request]
     targets: [title]
 
-  - label: ci
+  - label: kind:ci
     regexs:
       - /^ci(\(.*\))?:/i
     events: [issues, pull_request]
     targets: [title]
 
-  - label: revert
+  - label: kind:revert
     regexs:
       - /^revert(\(.*\))?:/i
-    events: [issues, pull_request]
+    events: [pull_request]
     targets: [title]
