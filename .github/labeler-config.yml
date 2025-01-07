@@ -1,0 +1,81 @@
+# Copyright 2023 RobustMQ Team
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# feat|fix|test|refactor|chore|style|docs|perf|build|ci|revert
+filters:
+  - label: feat
+    regexs:
+      - /^feat(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
+
+  - label: fix
+    regexs:
+      - /^fix(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
+
+  - label: test
+    regexs:
+      - /^test(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
+
+  - label: refactor
+    regexs:
+      - /^refactor(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
+
+  - label: chore
+    regexs:
+      - /^chore(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
+
+  - label: style
+    regexs:
+      - /^style(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
+
+  - label: docs
+    regexs:
+      - /^docs(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
+
+  - label: perf
+    regexs:
+      - /^perf(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
+
+  - label: build
+    regexs:
+      - /^build(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
+
+  - label: ci
+    regexs:
+      - /^ci(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
+
+  - label: revert
+    regexs:
+      - /^revert(\(.*\))?:/i
+    events: [issues, pull_request]
+    targets: [title]
